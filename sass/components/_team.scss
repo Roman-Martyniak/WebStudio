@@ -28,7 +28,7 @@
   @extend %section;
   background-color: #f5f4fa;
   display: block;
-  width: 480px;
+/*   width: 480px; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -46,7 +46,7 @@
 }
 .container-team {
   display: block;
-  width: 480px;
+/*   width: 480px; */
   padding-left: 15px;
   padding-right: 15px;
 
@@ -63,7 +63,7 @@
   }
 }
 .team-menu {
-  width: 480px;
+/*   width: 480px; */
 
   @media screen and(min-width:768px) {
     display: flex;

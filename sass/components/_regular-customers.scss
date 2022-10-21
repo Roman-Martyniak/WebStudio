@@ -44,7 +44,7 @@
   background: white;
 
   &-container {
-    width: 480px;
+    /* width: 480px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,7 +70,8 @@
 
 .regular-customers-menu {
   display: flex;
-
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 
   @media screen and(min-width:768px) {
@@ -91,7 +92,7 @@
     margin-right: 30px;
     height: 120px;
     background-color: $header-bg-color;
-    flex-basis: 43%;
+    flex-basis: 39%;
 
     @media screen and(min-width:768px) {
       flex-basis: 29%;

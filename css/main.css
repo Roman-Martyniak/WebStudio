@@ -1,7 +1,7 @@
 /* $tablet: min-width 768px;
 $desktop: min-width 1600px; */
 .footer-container {
-  width: 1200px;
+  /*   width: 1200px; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -68,6 +68,7 @@ img {
   display: block;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .page-header {
@@ -530,7 +531,7 @@ img {
 }
 
 .container {
-  width: 480px;
+  /* width: 480px; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -548,7 +549,7 @@ img {
 
 .hero {
   display: block;
-  width: 480px;
+  /* width: 480px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -566,7 +567,7 @@ img {
   }
 }
 .hero__section-hero {
-  min-width: 480px;
+  /*     min-width: 480px; */
   background-color: #2f303a;
   text-align: center;
   margin-left: auto;
@@ -972,7 +973,7 @@ img {
 .team {
   background-color: #f5f4fa;
   display: block;
-  width: 480px;
+  /*   width: 480px; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -993,7 +994,7 @@ img {
 
 .container-team {
   display: block;
-  width: 480px;
+  /*   width: 480px; */
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -1013,7 +1014,7 @@ img {
 }
 
 .team-menu {
-  width: 480px;
+  /*   width: 480px; */
 }
 @media screen and (min-width: 768px) {
   .team-menu {
@@ -1218,7 +1219,7 @@ img {
   background: white;
 }
 .regular-customers-container {
-  width: 480px;
+  /* width: 480px; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1256,6 +1257,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1286,8 +1293,8 @@ img {
   margin-right: 30px;
   height: 120px;
   background-color: #ffffff;
-  -ms-flex-preferred-size: 43%;
-      flex-basis: 43%;
+  -ms-flex-preferred-size: 39%;
+      flex-basis: 39%;
 }
 @media screen and (min-width: 768px) {
   .regular-customers-menu__regular-customers-item {
@@ -1414,7 +1421,7 @@ img {
 }
 
 .footer-container {
-  width: 480px;
+  /*   width: 480px; */
   display: block;
   padding: 60px 0;
   margin: 0 auto;
@@ -2571,8 +2578,8 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-preferred-size: 20%;
-        flex-basis: 20%;
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
     width: 768px;
   }
 }
