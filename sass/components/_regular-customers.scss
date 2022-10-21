@@ -1,0 +1,177 @@
+.regular-customers {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $header-bg-color;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* display: flex; */
+  /* justify-content: space-between; */
+
+  @media screen and(min-width:768px) {
+    width: 768px;
+  }
+
+  @media screen and(min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    width: 1200px;
+  }
+
+  &__regular-customers-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+  }
+
+  @media screen and(min-width:1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
+.regular-customers {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: white;
+
+  &-container {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and(min-width:768px) {
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 768px;
+    }
+
+    @media screen and(min-width:1200px) {
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 1200px;
+    }
+  }
+}
+
+.regular-customers-menu {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  @media screen and(min-width:768px) {
+    display: flex;
+    padding-top: 50px;
+  }
+
+  @media screen and(min-width:1200px) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    flex-wrap: nowrap;
+  }
+
+  &__regular-customers-item {
+    content: "";
+    margin-right: 30px;
+    height: 120px;
+    background-color: $header-bg-color;
+    flex-basis: 43%;
+
+    @media screen and(min-width:768px) {
+      flex-basis: 29%;
+    }
+
+    &:hover a {
+      fill: $accent-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: transform, color, opacity, background-color;
+    }
+
+    &:hover svg {
+      fill: $accent-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: transform, color, opacity, background-color;
+    }
+  }
+
+  &__customers-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $header-bg-color;
+    height: 92px;
+    padding: 0;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    @media screen and(min-width:768px) {
+    }
+
+    &:focus {
+      border: 1px solid $accent-color;
+      border-radius: 4px;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: transform, color, opacity, background-color;
+    }
+
+    &:focus a {
+      fill: $accent-color;
+      color: $accent-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: transform, color, opacity, background-color;
+    }
+
+    &:focus svg {
+      fill: $accent-color;
+      color: $accent-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: transform, color, opacity, background-color;
+    }
+
+    &:hover {
+      border: 1px solid $accent-color;
+      border-radius: 4px;
+      color: $accent-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: transform, color, opacity, background-color;
+    }
+  }
+}
+.customers-icon {
+  fill: #afb1b8;
+
+  &:hover {
+    fill: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform, color, opacity, background-color;
+  }
+
+  &:focus {
+    fill: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform, color, opacity, background-color;
+  }
+}

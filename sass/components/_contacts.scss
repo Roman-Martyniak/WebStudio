@@ -1,0 +1,161 @@
+.contacts {
+  display: none;
+
+  @media screen and(min-width:768px) {
+    display: block;
+    margin-left: auto;
+    align-items: end;
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    margin-left: 70px;
+  }
+
+  @media screen and(min-width:1200px) {
+    display: flex;
+    margin-left: auto;
+    margin-right: -10px;
+    align-items: center;
+    width: auto;
+  }
+
+  &__contact-item {
+    display: none;
+
+    @media screen and(min-width:768px) {
+      margin-left: auto;
+      margin-right: auto;
+      padding-right: 15px;
+      display: block;
+      padding-bottom: 10px;
+    }
+
+    @media screen and(min-width:1200px) {
+      display: flex;
+      margin-left: auto;
+      padding-bottom: 0px;
+    }
+
+    &:hover {
+      color: $accent-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: transform, color, opacity, background-color;
+    }
+
+    &:focus {
+      fill: $accent-color;
+      color: $accent-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: transform, color, opacity, background-color;
+    }
+  }
+
+  &__contacts-item {
+    @media screen and(min-width:480px) {
+      display: none;
+    }
+  }
+
+  &__contacts-link {
+    display: flex;
+    align-items: center;
+    font-family: "Roboto";
+    font-style: normal;
+    color: $title-text-color;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-right: 50px;
+
+    &:hover {
+      fill: $accent-color;
+      color: $accent-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: transform, color, opacity, background-color;
+    }
+
+    &:focus,
+    &:focus svg {
+      color: $accent-color;
+      fill: $accent-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: transform, color, opacity, background-color;
+    }
+  }
+
+  &__contacts-envelope {
+    fill: #757575;
+
+    @media screen and(min-width:768px) {
+      width: 14px;
+      height: 10px;
+      margin-right: 8px;
+      &:hover {
+        fill: $accent-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: transform, color, opacity, background-color;
+      }
+
+      &::before,
+      &:focus {
+        fill: $accent-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: transform, color, opacity, background-color;
+      }
+    }
+
+    @media screen and(min-width:1200px) {
+      margin-right: 10px;
+      width: 16px;
+      height: 12px;
+      margin-right: 10px;
+    }
+  }
+
+  &__contacts-smartphone {
+    fill: #757575;
+    &:hover {
+      fill: $accent-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: transform, color, opacity, background-color;
+    }
+
+    &::before,
+    &:focus {
+      fill: $accent-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: transform, color, opacity, background-color;
+    }
+
+    @media screen and(min-width:768px) {
+      margin-right: 8px;
+      width: 10px;
+      height: 14px;
+    }
+    @media screen and(min-width:1200px) {
+      width: 10px;
+      height: 16px;
+      margin-right: 10px;
+    }
+  }
+
+  .contact-item:focus a,
+  .contact-item:focus svg {
+    color: $accent-color;
+    fill: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform, color, opacity, background-color;
+  }
+}

@@ -1,0 +1,141 @@
+.container {
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and(min-width:768px) {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.hero {
+  display: block;
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and(min-width:768px) {
+    display: block;
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and(min-width:1200px) {
+    width: 100%;
+  }
+
+  &__section-hero {
+    min-width: 480px;
+    background-color: #2f303a;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 200px 0;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/background-img.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and(min-width:768px) {
+    &__section-hero {
+      min-width: 768px;
+      background-color: #2f303a;
+      text-align: center;
+      margin-left: auto;
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/hero/hero-tb-min.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media screen and(min-width:1200px) {
+    &__section-hero {
+      min-width: 1600px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #2f303a;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 200px 0;
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/hero/hero-dt-min.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__hero-title {
+    color: $features-works-bg-color;
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    @media screen and(min-width:768px) {
+      display: block;
+      width: 768px;
+      text-align: center;
+    }
+
+    @media screen and(min-width:1200px) {
+      color: $features-works-bg-color;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+  }
+
+  &__hero-button {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    min-width: 216px;
+    cursor: pointer;
+    letter-spacing: 0.06em;
+    border: 0px;
+    background-color: $accent-color;
+    color: $header-bg-color;
+
+    @media screen and(min-width:480px) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

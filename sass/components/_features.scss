@@ -1,0 +1,134 @@
+.features {
+  display: block;
+
+  &__visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and(min-width:768px) {
+    width: 768px;
+  }
+
+  @media screen and(min-width:1200px) {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.features-list {
+  @extend %list;
+  display: block;
+
+  gap: 30px;
+  background-color: $header-bg-color;
+  list-style-type: none;
+
+  @media screen and(min-width:768px) {
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  @media screen and(min-width:1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  &__featurest-item {
+    @media screen and(min-width:1200px) {
+      width: 270px;
+      max-height: 141px;
+    }
+
+    @media screen and(min-width:768px) {
+      flex-basis: 46%;
+    }
+  }
+}
+.features-cont {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 120px;
+  margin-right: 30px;
+  border: 0;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  margin-top: 30px;
+
+  @media screen and(min-width:768px) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and(min-width:1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 270px;
+  }
+
+  &__features-icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.features-container-text {
+  display: block;
+  &__features-title {
+    color: $primary-text-color;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 30px;
+
+    @media screen and(min-width:480px) {
+      text-align: center;
+    }
+
+    @media screen and(min-width:768px) {
+      text-align: start;
+    }
+
+    @media screen and(min-width:1200px) {
+      text-align: start;
+    }
+  }
+
+  &__features-text {
+    max-width: 100%;
+    display: block;
+
+    color: $title-text-color;
+    font-size: 14px;
+    line-height: 1.71;
+
+    @media screen and(min-width:768px) {
+      max-width: 100%;
+      display: flex;
+    }
+  }
+}
