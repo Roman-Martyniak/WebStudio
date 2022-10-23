@@ -573,8 +573,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 200px 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/background-img.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background-img.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero/hero-mb-min.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero-mb-min.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -592,7 +592,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero__section-hero {
-    min-width: 1600px;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     background-color: #2f303a;
@@ -686,10 +686,18 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  /*  @media screen and(min-width:480px) {
+     width: 480px;
+   } */
 }
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -794,16 +802,15 @@ img {
 }
 .features-container-text__features-title {
   color: #212121;
+  text-align: center;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
   margin-top: 30px;
-}
-@media screen and (min-width: 480px) {
-  .features-container-text__features-title {
+  /* @media screen and(min-width:480px) {
     text-align: center;
-  }
+  } */
 }
 @media screen and (min-width: 768px) {
   .features-container-text__features-title {
@@ -874,6 +881,7 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  margin-top: 94px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1185,14 +1193,14 @@ img {
 }
 @media screen and (min-width: 768px) {
   .regular-customers {
-    width: 768px;
+    /*    width: 768px; */
   }
 }
 @media screen and (min-width: 1200px) {
   .regular-customers {
     padding-top: 94px;
     padding-bottom: 94px;
-    width: 1200px;
+    /*     width: 1200px; */
   }
 }
 .regular-customers__regular-customers-title {
@@ -1202,7 +1210,7 @@ img {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 @media screen and (min-width: 1200px) {
   .regular-customers {
@@ -1527,6 +1535,11 @@ img {
   margin-right: auto;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .address {
+    width: 231px;
+  }
+}
 
 .footer-menu {
   display: inline-block;
@@ -1664,7 +1677,7 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     margin-right: 67px;
   }
 }
@@ -1784,9 +1797,16 @@ img {
 }
 
 .mailing-list {
-  padding-top: 20px;
-  padding-left: 15px;
+  /* width: 480px; */
+  /* padding-top: 20px; */
+  /* padding-left: 15px; */
   padding-right: 15px;
+}
+@media screen and (max-width: 480px) {
+  .mailing-list {
+    max-width: 480px;
+    padding-right: 15px;
+  }
 }
 .mailing-list__mailing-title {
   font-weight: 700;
@@ -1797,6 +1817,12 @@ img {
   color: #ffffff;
   text-align: center;
 }
+@media screen and (max-width: 480px) {
+  .mailing-list__mailing-title {
+    text-align: center;
+    margin-top: 60px;
+  }
+}
 @media screen and (min-width: 480px) {
   .mailing-list__mailing-title {
     text-align: center;
@@ -1806,11 +1832,12 @@ img {
 @media screen and (min-width: 1200px) {
   .mailing-list__mailing-title {
     text-align: start;
+    padding-left: 15px;
   }
 }
 .mailing-list__mailing-list-input {
   color: rgba(255, 255, 255, 0.6);
-  width: 100%;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1820,9 +1847,19 @@ img {
   padding-left: 5px;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 480px) {
+  .mailing-list__mailing-list-input {
+    width: 295px;
+  }
+}
 @media screen and (min-width: 768px) {
   .mailing-list__mailing-list-input {
     width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mailing-list__mailing-list-input {
+    width: 358px;
   }
 }
 .mailing-list__mailing-list-input:hover {
@@ -1869,7 +1906,24 @@ img {
   display: block;
   text-align: center;
   position: relative;
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  padding: 0 15px;
+}
+@media screen and (max-width: 480px) {
+  .mailing-list-box {
+    max-width: 480px;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .mailing-list-box {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mailing-list-box {
+    margin-top: 20px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .mailing-list-box {
@@ -1889,7 +1943,7 @@ img {
   border: 1px solid #2196f3;
 }
 .mailing-list-box__mailing-button {
-  display: inline-block;
+  display: block;
   text-align: center;
   width: 200px;
   height: 50px;
@@ -1898,7 +1952,8 @@ img {
   border: 0px;
   border-radius: 4px;
   border-color: #2196f3;
-  margin-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .mailing-list-box__mailing-button {
@@ -1954,22 +2009,46 @@ img {
 }
 .mailing-list-box__mailing-icon {
   position: absolute;
-  right: 138px;
+  right: 145px;
   top: 82px;
+  /* @media screen and(min-width:320px) {
+    top: 82px;
+    right: 71px;
+  } */
+}
+@media screen and (max-width: 480px) {
+  .mailing-list-box__mailing-icon {
+    position: absolute;
+    right: 73px;
+    top: 82px;
+  }
 }
 @media screen and (min-width: 768px) {
   .mailing-list-box__mailing-icon {
-    right: 144px;
+    right: 157px;
+    top: 82px;
   }
 }
 @media screen and (min-width: 1200px) {
   .mailing-list-box__mailing-icon {
     position: absolute;
-    right: 22px;
+    right: 33px;
     top: 32px;
   }
 }
 
+@media screen and (max-width: 480px) {
+  .mailing-container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .mailing-container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .mailing-container {
     display: -webkit-box;
