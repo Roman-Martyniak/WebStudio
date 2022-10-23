@@ -32,19 +32,21 @@
   }
 
   &__section-hero {
-    /*     min-width: 480px; */
-    background-color: #2f303a;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 200px 0;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../img/hero/hero-mb-min.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    @media screen and (min-width: 480px) {
+      /*     min-width: 480px; */
+      background-color: #2f303a;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 200px 0;
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/hero/hero-mb-min.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
   }
 
   @media screen and(min-width:768px) {
