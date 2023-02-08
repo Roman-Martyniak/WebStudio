@@ -21,7 +21,7 @@
   &__link {
     display: none;
 
-    @media screen and(min-width:768px) {
+    @media screen and (min-width:768px) {
       display: flex;
       color: $primary-text-color;
       list-style-type: none;
@@ -32,7 +32,7 @@
       text-decoration: none;
     }
 
-    @media screen and(min-width:1200px) {
+    @media screen and (min-width:1200px) {
       display: block;
       color: $primary-text-color;
       list-style-type: none;
@@ -70,7 +70,7 @@
   color: $accent-color;
   text-decoration: none;
   &::after {
-    @media screen and(min-width:768px) {
+    @media screen and (min-width:768px) {
       content: "";
       display: block;
       position: absolute;
@@ -81,7 +81,7 @@
       bottom: -35px;
     }
 
-    @media screen and(min-width:1200px) {
+    @media screen and (min-width:1200px) {
       content: "";
       display: block;
       position: absolute;

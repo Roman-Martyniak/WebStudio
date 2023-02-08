@@ -5,7 +5,7 @@
   padding-left: 15px;
   padding-right: 15px;
 
-  @media screen and(min-width:768px) {
+  @media screen and (min-width:768px) {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -16,18 +16,18 @@
 
 .hero {
   display: block;
-  /* width: 480px; */
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and(min-width:768px) {
+  @media screen and (min-width:768px) {
     display: block;
     width: 768px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width:1200px) {
     width: 100%;
   }
 
@@ -45,11 +45,11 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     @media screen and (min-width: 480px) {
-      /*     min-width: 480px; */
+          min-width: 480px;
     }
   }
 
-  @media screen and(min-width:768px) {
+  @media screen and (min-width:768px) {
     &__section-hero {
       min-width: 768px;
       background-color: #2f303a;
@@ -65,7 +65,7 @@
     }
   }
 
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width:1200px) {
     &__section-hero {
       max-width: 1600px;
       margin-left: auto;
@@ -98,13 +98,13 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    @media screen and(min-width:768px) {
+    @media screen and (min-width:768px) {
       display: block;
       width: 768px;
       text-align: center;
     }
 
-    @media screen and(min-width:1200px) {
+    @media screen and (min-width:1200px) {
       color: $features-works-bg-color;
       margin-left: auto;
       margin-right: auto;
@@ -134,7 +134,7 @@
     background-color: $accent-color;
     color: $header-bg-color;
 
-    @media screen and(min-width:480px) {
+    @media screen and (min-width:480px) {
       display: block;
       margin-left: auto;
       margin-right: auto;

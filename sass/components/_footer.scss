@@ -8,13 +8,13 @@
   padding: 60px 0;
   margin: 0 auto;
 
-  @media screen and(min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     width: 768px;
   }
 
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
     display: flex;
     width: 1200px;
@@ -27,11 +27,11 @@
   margin: auto;
   text-align: center;
 
-  @media screen and(min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin: auto;
   }
 
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     display: block;
     margin-right: 70px;
   }
@@ -41,7 +41,7 @@
   margin-bottom: 20px;
   display: flex;
   align-items: center;
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 20px;
   }
 
@@ -59,7 +59,7 @@
     font-style: normal;
     font-weight: 700;
 
-    @media screen and(min-width:1200px) {
+    @media screen and (min-width: 1200px) {
       font-size: 26px;
       line-height: 1.192;
       margin-bottom: 20px;
@@ -105,13 +105,13 @@
   margin-left: auto;
   align-items: center;
 
-  @media screen and(min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     display: inline-block;
     margin-left: auto;
     text-align: start;
@@ -201,7 +201,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     justify-content: center;
     /* padding-top: 20px; */
     margin-right: 67px;
@@ -218,7 +218,7 @@
     margin-top: 60px;
     margin-bottom: 20px;
 
-    @media screen and(min-width:1200px) {
+    @media screen and (min-width: 1200px) {
       text-align: start;
     }
   }
@@ -228,7 +228,7 @@
   justify-content: center;
   align-items: center;
 
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: space-between;
   }
@@ -281,7 +281,7 @@
 .footer-soc-lists {
   &__footer-soc-item {
     margin-right: 10px;
-    @media screen and(min-width:1200px) {
+    @media screen and (min-width: 1200px) {
       margin-right: 10px;
     }
   }
@@ -291,11 +291,8 @@
   /* padding-top: 20px; */
   /* padding-left: 15px; */
   padding-right: 15px;
+  position: relative;
 
-  @media screen and(max-width:480px) {
-    max-width: 480px;
-    padding-right: 15px;
-  }
   &__mailing-title {
     font-weight: 700;
     font-size: 14px;
@@ -305,16 +302,16 @@
     color: #ffffff;
     text-align: center;
 
-    @media screen and(max-width:480px) {
+    @media screen and (max-width: 480px) {
       text-align: center;
       margin-top: 60px;
     }
 
-    @media screen and(min-width:480px) {
+    @media screen and (min-width: 480px) {
       text-align: center;
       margin-top: 60px;
     }
-    @media screen and(min-width:1200px) {
+    @media screen and (min-width: 1200px) {
       text-align: start;
       padding-left: 15px;
     }
@@ -331,15 +328,15 @@
     padding-left: 5px;
     margin-bottom: 20px;
 
-    @media screen and(max-width:480px) {
+    @media screen and (min-width: 320px) {
       width: 100%;
     }
 
-    @media screen and(min-width:768px) {
+    @media screen and (min-width: 768px) {
       width: 450px;
     }
 
-    @media screen and(min-width:1200px) {
+    @media screen and (min-width: 1200px) {
       width: 358px;
     }
 
@@ -368,24 +365,14 @@
 .mailing-list-box {
   display: block;
   text-align: center;
-  position: relative;
-  /* margin-top: 20px; */
-  padding: 0 15px;
+  padding: 15px 15px 15px;
 
-  @media screen and(max-width:480px) {
-    max-width: 480px;
+
+  @media screen and (min-width: 768px) {
     margin-top: 20px;
   }
 
-  @media screen and(min-width:480px) {
-    margin-top: 20px;
-  }
-
-  @media screen and(min-width:768px) {
-    margin-top: 20px;
-  }
-
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     position: relative;
     padding-top: 20px;
@@ -398,6 +385,7 @@
     border: 1px solid $accent-color;
   }
   &__mailing-button {
+    position: relative;
     display: block;
     text-align: center;
     width: 200px;
@@ -410,13 +398,13 @@
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and(min-width:768px) {
+    @media screen and (min-width: 768px) {
       display: block;
       margin-right: auto;
       margin-left: auto;
     }
 
-    @media screen and(min-width:1200px) {
+    @media screen and (min-width: 1200px) {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -447,49 +435,39 @@
 
   &__mailing-icon {
     position: absolute;
-    right: 145px;
-    top: 82px;
+    right: 20px;
+    top: 9px;
 
-    /* @media screen and(min-width:320px) {
-      top: 82px;
-      right: 71px;
-    } */
-
-    @media screen and(max-width:480px) {
+    @media screen and (min-width: 768px) {
       position: absolute;
-      right: 73px;
-      top: 82px;
+      right: 20px;
+      top: 12px;
     }
 
-    @media screen and(min-width:768px) {
-      right: 157px;
-      top: 82px;
-    }
-
-    @media screen and(min-width:1200px) {
+    @media screen and (min-width: 1200px) {
       position: absolute;
-      right: 33px;
-      top: 32px;
+      right: 18px;
+      top: 13px;
     }
   }
 }
 
 .mailing-container {
-  @media screen and(max-width:480px) {
-    max-width: 480px;
-  }
-  @media screen and(min-width:480px) {
+  /* @media screen and(min-width:320px) {
+    width: 480px;
+  } */
+  @media screen and (min-width: 480px) {
     width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
-  @media screen and(min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
   }
 }

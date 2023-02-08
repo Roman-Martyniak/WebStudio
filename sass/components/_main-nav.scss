@@ -1,9 +1,9 @@
 .main-nav {
-  @media screen and(min-width:768px) {
+  @media screen and (min-width:768px) {
     display: flex;
     align-items: center;
   }
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width:1200px) {
     display: flex;
     align-items: center;
   }
@@ -20,11 +20,11 @@
   line-height: 1.16;
   letter-spacing: 0.03em;
 
-  @media screen and(min-width:768px) {
+  @media screen and (min-width:768px) {
     margin-right: 88px;
   }
 
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width:1200px) {
     font-size: 26px;
     line-height: 1.192;
     margin-right: 93px;
